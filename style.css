@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.background-photo{
+    background-image: url(assets/six.jpg);
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    height: 200px;
+   
+}
