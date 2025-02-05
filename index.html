@@ -12,7 +12,7 @@
 </head>
 <body class="bg-white min-h-screen">
     <!-- Navber start -->
-       <section class="bg-[#F9F7F3] background-photo gap-3">
+       <section class="bg-[#F9F7F3] background-photo gap-3 w-full fixed z-50 ">
         <div class="container  flex items-center justify-between  mt-10 mb-10 px-20 py-10">
             <button class="relative rounded px-10 py-2.5 overflow-hidden group bg-green-500 relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300">
                 <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease">
@@ -44,7 +44,7 @@
  <!-- _____________________________________________________________ -->
  
    <section class="flex-col justify-center items-center container">
-    <h1 class="text-black items-center justify-center container mb-10 max-w-screen-lg text-8xl font-bold">Pray for Bangladesh</h1>
+    <h1 class="text-black items-center justify-center container  mb-10 max-w-screen-lg text-8xl font-bold">Pray for Bangladesh</h1>
     <!-- div 1 --> 
            <div class="flex">
             <img  class="h-80 w-[600px]"  src="assets/0ne.jpg" alt="">
@@ -71,7 +71,7 @@
  
  <!-- Card Section Start -->
 
- <section id="card" class="card container px-5 justify-center items-center py-5 gap-5 ">
+ <section id="card" class="card container px-5 justify-center items-center py-5 gap-5 relative">
                      <!-- card 1 -->
                              <div class="flex bg-[#F9F7F3] w-[1200px] px-9 py-5 gap-5 rounded-xl">
                                       <!-- image left part -->
@@ -102,8 +102,8 @@
                               <img src="assets/coin.png" alt="">
                               5500 BDT
                           </button>
-                          <p class="text-2xl font-bold text-black mt-7">Donate For Flood at Noakhali , Bangladesh</p>
-                          <p class="mt-4"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                          <p class="text-2xl font-bold text-black mt-7">Donate for Flood Relief in Feni,Bangladesh</p>
+                          <p class="mt-4">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                         <input class="input max-w-xl h-12 bg-white border-black mt-5 w-full" placeholder="write your donation amount" type="text">
                         <button class="text-white bg-green-400 text-2xl w-full  font-bold px-5 mt-2 py-2 rounded-xl">Donate Now</button>
                       </div>
@@ -120,8 +120,8 @@
                               <img src="assets/coin.png" alt="">
                               5500 BDT
                           </button>
-                          <p class="text-2xl font-bold text-black mt-7">Donate For Flood at Noakhali , Bangladesh</p>
-                          <p class="mt-4"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                          <p class="text-2xl font-bold text-black mt-7">Aid for Injured in the Quota Movement</p>
+                          <p class="mt-4">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                         <input class="input max-w-xl h-12 bg-white border-black mt-5 w-full" placeholder="write your donation amount" type="text">
                         <button class="text-white bg-green-400 text-2xl w-full  font-bold px-5 mt-2 py-2 rounded-xl">Donate Now</button>
                       </div>
@@ -130,6 +130,40 @@
  </section>
  
  <!-- Card Section End -->
+
+
+
+
+ <footer class="px-4 py-8 bg-[#F9F7F3] ">
+	<div class="container flex flex-wrap items-center justify-center mx-auto space-y-4 sm:justify-between sm:space-y-0">
+		<div class="flex flex-row pr-3 space-x-4 sm:space-x-8">
+			<div class="flex items-center justify-center flex-shrink-0 w-12 h-12 rounded-full bg-violet-400 dark:bg-violet-600">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="w-5 h-5 rounded-full text-gray-900 dark:text-gray-50">
+					<path d="M18.266 26.068l7.839-7.854 4.469 4.479c1.859 1.859 1.859 4.875 0 6.734l-1.104 1.104c-1.859 1.865-4.875 1.865-6.734 0zM30.563 2.531l-1.109-1.104c-1.859-1.859-4.875-1.859-6.734 0l-6.719 6.734-6.734-6.734c-1.859-1.859-4.875-1.859-6.734 0l-1.104 1.104c-1.859 1.859-1.859 4.875 0 6.734l6.734 6.734-6.734 6.734c-1.859 1.859-1.859 4.875 0 6.734l1.104 1.104c1.859 1.859 4.875 1.859 6.734 0l21.307-21.307c1.859-1.859 1.859-4.875 0-6.734z"></path>
+				</svg>
+			</div>
+			<ul class="flex flex-wrap items-center space-x-4 sm:space-x-8">
+				<li>
+					<a rel="noopener noreferrer" href="#">Terms of Use</a>
+				</li>
+				<li>
+					<a rel="noopener noreferrer" href="#">Privacy</a>
+				</li>
+			</ul>
+		</div>
+		<ul class="flex flex-wrap pl-3 space-x-4 sm:space-x-8">
+			<li>
+				<a rel="noopener noreferrer" href="#">Instagram</a>
+			</li>
+			<li>
+				<a rel="noopener noreferrer" href="#">Facebook</a>
+			</li>
+			<li>
+				<a rel="noopener noreferrer" href="#">Twitter</a>
+			</li>
+		</ul>
+	</div>
+</footer>
  
  <!-- _____________________________________________________________ -->
 </body>
