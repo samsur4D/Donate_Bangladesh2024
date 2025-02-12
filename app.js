@@ -13,10 +13,23 @@ const noakhaliFlood = inputValue[0].value;
             
              donateInital.innerText = parseInt(donateInital.innerText) + number ;
              const donateMain = parseInt(donateInital.innerText);
-             console.log(typeof(donateMain));
+            //  console.log(typeof(donateMain));
+            //  alert("Donated Succesfully")
+            Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "Your Donation Has Been completed Successfully",
+                showConfirmButton: false,
+                timer: 1500
+              });
             // donateInitial innertext এর ভিতর ডেফাউল্ট ভাবে  ০ আছে। এটাকে parseInt করে নাম্বার 
             // করে তার সাথে নতুন নাম্বার যোগ করে donateInitial innertext এর ভিতর রাখা হয়েছে। 
             // পরবর্তীতে donatemain এর ভিতর donnateInitial innertext কে আবার রেখে parseINT করে দেয়া হয়েছে। 
+
+            const totalAmount = document.querySelector(".totalAmount");
+            totalAmount.innerText = parseInt(totalAmount.innerText) - number ;
+            const newToatl = parseInt(totalAmount.innerText);
+            console.log(newToatl);
             
         } else{
             alert("Please Inter a Valid Donation Amount")
@@ -33,6 +46,17 @@ if(number > 0){
     donateInital.innerText = parseInt(donateInital.innerText) + number ;
     const donateMain = parseInt(donateInital.innerText);
     console.log(donateMain);
+    Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Your Donation Has Been completed Successfully",
+        showConfirmButton: false,
+        timer: 1500
+      });
+      const totalAmount = document.querySelector(".totalAmount");
+            totalAmount.innerText = parseInt(totalAmount.innerText) - number ;
+            const newToatl = parseInt(totalAmount.innerText);
+            console.log(newToatl);
 } else{
     alert("Please Inter a Valid Donation Amount")
 }
@@ -48,6 +72,17 @@ if(number > 0){
     donateInital.innerText = parseInt(donateInital.innerText) + number ;
     const donateMain = parseInt(donateInital.innerText);
     console.log(donateMain);
+    Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Your Donation Has Been completed Successfully",
+        showConfirmButton: false,
+        timer: 1500
+      });
+      const totalAmount = document.querySelector(".totalAmount");
+            totalAmount.innerText = parseInt(totalAmount.innerText) - number ;
+            const newToatl = parseInt(totalAmount.innerText);
+            console.log(newToatl);
 } else{
     alert("Please Inter a Valid Donation Amount")
 }
@@ -65,6 +100,17 @@ if(number > 0){
     donateInital.innerText = parseInt(donateInital.innerText) + number ;
     const donateMain = parseInt(donateInital.innerText);
     console.log(donateMain);
+    Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Your Donation Has Been completed Successfully",
+        showConfirmButton: false,
+        timer: 1500
+      });
+      const totalAmount = document.querySelector(".totalAmount");
+            totalAmount.innerText = parseInt(totalAmount.innerText) - number ;
+            const newToatl = parseInt(totalAmount.innerText);
+            console.log(newToatl);
 } else{
     alert("Please Inter a Valid Donation Amount")
 }
