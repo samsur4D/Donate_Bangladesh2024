@@ -42,14 +42,21 @@ const noakhaliFlood = inputValue[0].value;
             const selectedCamping = yourSelectedCamping.innerText;
 
             const historySection = document.getElementById("historySection");
-            historySection.insertAdjacentHTML("beforeend",`<div class="px-20 py-6 mt-3 bg-[#F9F7F3] h-32 w-[1000px]  border border-gray-200 container rounded-xl">
+            historySection.insertAdjacentHTML("afterbegin",`<div class="px-20 py-6 mt-3 bg-[#F9F7F3] h-32 w-[1000px]  border border-gray-200 container rounded-xl">
               <p class="text-xl font-bold text-black">${yourDonation} Taka is donated in ${selectedCamping}</p>
               <p class="mt-2 text-md font-semi-bold">Thank you, you have helped us.  This little help of your little humanity bears the identity of the great humanity.</p>
         </div>`)
         inputValue[0].value = "";
             
         } else{
-            alert("Please Inter a Valid Donation Amount")
+            
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Please Inter a Valid Donation Amount ",
+                footer: '<a href="#">Something went wrong!</a>'
+              });
+               inputValue[0].value = ""
         }
 }
 // -------------------------
@@ -79,14 +86,20 @@ if(number > 0){
             const selectedCamping = yourSelectedCamping.innerText;
 
             const historySection = document.getElementById("historySection");
-            historySection.insertAdjacentHTML("beforeend",`<div class="px-20 py-6 mt-3 bg-[#F9F7F3] h-32 w-[1000px]  border border-gray-200 container rounded-xl">
+            historySection.insertAdjacentHTML("afterbegin",`<div class="px-20 py-6 mt-3 bg-[#F9F7F3] h-32 w-[1000px]  border border-gray-200 container rounded-xl">
               <p class="text-xl font-bold text-black">${yourDonation} Taka is donated in ${selectedCamping}</p>
               <p class="mt-2 text-md font-semi-bold">Thank you, you have helped us.  This little help of your little humanity bears the identity of the great humanity.</p>
         </div>`)
             inputValue[1].value = "";
 
 } else{
-    alert("Please Inter a Valid Donation Amount")
+    Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please Inter a Valid Donation Amount ",
+        footer: '<a href="#">Something went wrong!</a>'
+      });
+       inputValue[1].value = ""
 }
 }
 
@@ -116,7 +129,7 @@ if(number > 0){
             const selectedCamping = yourSelectedCamping.innerText;
 
             const historySection = document.getElementById("historySection");
-            historySection.insertAdjacentHTML("beforeend",`<div class="px-20 py-6 mt-3 bg-[#F9F7F3] h-32 w-[1000px]  border border-gray-200 container rounded-xl">
+            historySection.insertAdjacentHTML("afterbegin",`<div class="px-20 py-6 mt-3 bg-[#F9F7F3] h-32 w-[1000px]  border border-gray-200 container rounded-xl">
               <p class="text-xl font-bold text-black">${yourDonation} Taka is donated in ${selectedCamping}</p>
               <p class="mt-2 text-md font-semi-bold">Thank you, you have helped us.  This little help of your little humanity bears the identity of the great humanity.</p>
         </div>`)
@@ -126,7 +139,13 @@ if(number > 0){
             const firstName = firstDonationName.innerText;
             console.log(firstName);
 } else{
-    alert("Please Inter a Valid Donation Amount")
+    Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please Inter a Valid Donation Amount ",
+        footer: '<a href="#">Something went wrong!</a>'
+      });
+       inputValue[2].value = ""
 }
 }
 
@@ -158,13 +177,19 @@ if(number > 0){
             const selectedCamping = yourSelectedCamping.innerText;
 
             const historySection = document.getElementById("historySection");
-            historySection.insertAdjacentHTML("beforeend",`<div class="px-20 py-6 mt-3 bg-[#F9F7F3] h-32 w-[1000px]  border border-gray-200 container rounded-xl">
+            historySection.insertAdjacentHTML("afterbegin",`<div class="px-20 py-6 mt-3 bg-[#F9F7F3] h-32 w-[1000px]  border border-gray-200 container rounded-xl">
               <p class="text-xl font-bold text-black">${yourDonation} Taka is donated in ${selectedCamping}</p>
               <p class="mt-2 text-md font-semi-bold">Thank you, you have helped us.  This little help of your little humanity bears the identity of the great humanity.</p>
         </div>`)
             inputValue[3].value = "";
 } else{
-    alert("Please Inter a Valid Donation Amount")
+    Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please Inter a Valid Donation Amount ",
+        footer: '<a href="#">Something went wrong!</a>'
+      });
+       inputValue[3].value = ""
 }
 }
 
