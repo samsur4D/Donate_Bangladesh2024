@@ -31,10 +31,23 @@ const noakhaliFlood = inputValue[0].value;
             totalAmount.innerText = parseInt(totalAmount.innerText) - number ;
             const newToatl = parseInt(totalAmount.innerText);
             // console.log(newToatl);
-            inputValue[0].value = "";
+            // 
+            
             const noakhaliCardName = document.getElementById('firstDonationName');
             const noakhali = noakhaliCardName.innerText;
             console.log(noakhali);
+
+            const yourDonation = inputValue[0].value;
+            const yourSelectedCamping = document.getElementById("firstDonationName");
+            const selectedCamping = yourSelectedCamping.innerText;
+
+            const historySection = document.getElementById("historySection");
+            historySection.insertAdjacentHTML("beforeend",`<div class="px-20 py-6 mt-3 bg-[#F9F7F3] h-32 w-[1000px]  border border-gray-200 container rounded-xl">
+              <p class="text-xl font-bold text-black">${yourDonation} Taka is donated in ${selectedCamping}</p>
+              <p class="mt-2 text-md font-semi-bold">Thank you, you have helped us.  This little help of your little humanity bears the identity of the great humanity.</p>
+        </div>`)
+        inputValue[0].value = "";
+            
         } else{
             alert("Please Inter a Valid Donation Amount")
         }
@@ -61,6 +74,15 @@ if(number > 0){
             totalAmount.innerText = parseInt(totalAmount.innerText) - number ;
             const newToatl = parseInt(totalAmount.innerText);
             console.log(newToatl);
+            const yourDonation = inputValue[1].value;
+            const yourSelectedCamping = document.getElementById("secondDonationName");
+            const selectedCamping = yourSelectedCamping.innerText;
+
+            const historySection = document.getElementById("historySection");
+            historySection.insertAdjacentHTML("beforeend",`<div class="px-20 py-6 mt-3 bg-[#F9F7F3] h-32 w-[1000px]  border border-gray-200 container rounded-xl">
+              <p class="text-xl font-bold text-black">${yourDonation} Taka is donated in ${selectedCamping}</p>
+              <p class="mt-2 text-md font-semi-bold">Thank you, you have helped us.  This little help of your little humanity bears the identity of the great humanity.</p>
+        </div>`)
             inputValue[1].value = "";
 
 } else{
@@ -89,6 +111,15 @@ if(number > 0){
             totalAmount.innerText = parseInt(totalAmount.innerText) - number ;
             const newToatl = parseInt(totalAmount.innerText);
             console.log(newToatl);
+            const yourDonation = inputValue[2].value;
+            const yourSelectedCamping = document.getElementById("thirdDonationName");
+            const selectedCamping = yourSelectedCamping.innerText;
+
+            const historySection = document.getElementById("historySection");
+            historySection.insertAdjacentHTML("beforeend",`<div class="px-20 py-6 mt-3 bg-[#F9F7F3] h-32 w-[1000px]  border border-gray-200 container rounded-xl">
+              <p class="text-xl font-bold text-black">${yourDonation} Taka is donated in ${selectedCamping}</p>
+              <p class="mt-2 text-md font-semi-bold">Thank you, you have helped us.  This little help of your little humanity bears the identity of the great humanity.</p>
+        </div>`)
             inputValue[2].value = "";
 
             const firstDonationName = document.getElementById("firstDonationName");
@@ -122,6 +153,15 @@ if(number > 0){
             totalAmount.innerText = parseInt(totalAmount.innerText) - number ;
             const newToatl = parseInt(totalAmount.innerText);
             console.log(newToatl);
+            const yourDonation = inputValue[3].value;
+            const yourSelectedCamping = document.getElementById("fourthDonationName");
+            const selectedCamping = yourSelectedCamping.innerText;
+
+            const historySection = document.getElementById("historySection");
+            historySection.insertAdjacentHTML("beforeend",`<div class="px-20 py-6 mt-3 bg-[#F9F7F3] h-32 w-[1000px]  border border-gray-200 container rounded-xl">
+              <p class="text-xl font-bold text-black">${yourDonation} Taka is donated in ${selectedCamping}</p>
+              <p class="mt-2 text-md font-semi-bold">Thank you, you have helped us.  This little help of your little humanity bears the identity of the great humanity.</p>
+        </div>`)
             inputValue[3].value = "";
 } else{
     alert("Please Inter a Valid Donation Amount")
