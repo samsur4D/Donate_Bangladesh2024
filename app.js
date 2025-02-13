@@ -22,6 +22,7 @@ const noakhaliFlood = inputValue[0].value;
                 showConfirmButton: false,
                 timer: 1500
               });
+                 
             // donateInitial innertext এর ভিতর ডেফাউল্ট ভাবে  ০ আছে। এটাকে parseInt করে নাম্বার 
             // করে তার সাথে নতুন নাম্বার যোগ করে donateInitial innertext এর ভিতর রাখা হয়েছে। 
             // পরবর্তীতে donatemain এর ভিতর donnateInitial innertext কে আবার রেখে parseINT করে দেয়া হয়েছে। 
@@ -29,8 +30,11 @@ const noakhaliFlood = inputValue[0].value;
             const totalAmount = document.querySelector(".totalAmount");
             totalAmount.innerText = parseInt(totalAmount.innerText) - number ;
             const newToatl = parseInt(totalAmount.innerText);
-            console.log(newToatl);
-            
+            // console.log(newToatl);
+            inputValue[0].value = "";
+            const noakhaliCardName = document.getElementById('firstDonationName');
+            const noakhali = noakhaliCardName.innerText;
+            console.log(noakhali);
         } else{
             alert("Please Inter a Valid Donation Amount")
         }
@@ -57,6 +61,8 @@ if(number > 0){
             totalAmount.innerText = parseInt(totalAmount.innerText) - number ;
             const newToatl = parseInt(totalAmount.innerText);
             console.log(newToatl);
+            inputValue[1].value = "";
+
 } else{
     alert("Please Inter a Valid Donation Amount")
 }
@@ -83,6 +89,11 @@ if(number > 0){
             totalAmount.innerText = parseInt(totalAmount.innerText) - number ;
             const newToatl = parseInt(totalAmount.innerText);
             console.log(newToatl);
+            inputValue[2].value = "";
+
+            const firstDonationName = document.getElementById("firstDonationName");
+            const firstName = firstDonationName.innerText;
+            console.log(firstName);
 } else{
     alert("Please Inter a Valid Donation Amount")
 }
@@ -111,6 +122,7 @@ if(number > 0){
             totalAmount.innerText = parseInt(totalAmount.innerText) - number ;
             const newToatl = parseInt(totalAmount.innerText);
             console.log(newToatl);
+            inputValue[3].value = "";
 } else{
     alert("Please Inter a Valid Donation Amount")
 }
