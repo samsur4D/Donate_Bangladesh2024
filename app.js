@@ -197,11 +197,21 @@ if(number > 0){
 
 // _____________________________________________________
 function donateNow(){
-    showElementById("cardSection")  ;
-    hideElementById("historySection")
+    showElementById("cardSection");
+    showElementById("sixImages")
+    hideElementById("historySection");
+    const donateNowButton = document.getElementById("donateNowButton");
+    donateNowButton.classList.add("bg-green-400");
+    const historyButton = document.getElementById("historyButton");
+    historyButton.classList.remove("bg-green-400")   
 }
 
 function history(){
     showElementById("historySection");
     hideElementById("cardSection");
+    hideElementById("sixImages")
+    const historyButton = document.getElementById("historyButton");
+    historyButton.classList.add("bg-green-400");
+    const donateNowButton = document.getElementById("donateNowButton");
+    donateNowButton.classList.remove("bg-green-400");
 }

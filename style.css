@@ -1,6 +1,8 @@
 *{
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
+    
 }
 
 .container{
@@ -18,6 +20,11 @@
    
 } */
 
-.blackshed{
-    
+.customClass{
+    backdrop-filter: blur(20px);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+
+
