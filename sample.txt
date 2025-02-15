@@ -1,0 +1,35 @@
+   <div class="flex bg-[#F9F7F3] max-w-[1200px] px-9 py-5 gap-5 rounded-xl">
+                   <!-- image left part -->
+                    <img src="assets/noakhali.png" alt="">
+                   <!-- right part -->
+                    <div class="">
+                     <button class="relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 gap-2 overflow-hidden font-bold text-gray-500 transition-all text-xl  duration-500 border border-gray-200 rounded-md cursor-pointer group ease bg-gradient-to-b from-white to-gray-50 hover:from-gray-50 hover:to-white active:to-white">
+                         <span class="w-full h-0.5 absolute bottom-0 group-active:bg-transparent left-0 bg-gray-100"></span>
+                         <span class="h-full w-0.5 absolute bottom-0 group-active:bg-transparent right-0 bg-gray-100"></span>
+                         <img src="assets/coin.png" alt="">
+                         <span class="noakhaliInitial">0</span> BDT
+                     </button>
+                     <p id="firstDonationName" class=" text-2xl font-bold text-black mt-7">Donate For Flood at Noakhali , Bangladesh</p>
+                     <p class="mt-4"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                   <input id="doanteInput" class="doanteInput input max-w-xl h-12 bg-white border-black mt-5 w-full" placeholder="write your donation amount" type="text">
+                   <button onclick="donateforNoakhali()" class="text-white bg-green-400 text-2xl w-full  font-bold px-5 mt-2 py-2 rounded-xl">Donate Now</button>
+                 </div>
+          </div>
+
+           <div class="flex flex-col md:flex-row bg-[#F9F7F3] max-w-[1200px] px-6 sm:px-9 py-5 gap-5 rounded-xl items-center md:items-start">
+    <!-- image left part -->
+     <img src="assets/noakhali.png" alt="">
+    <!-- right part -->
+     <div class="">
+      <button class="relative z-30 inline-flex items-center justify-center w-auto px-8 py-3 gap-2 overflow-hidden font-bold text-gray-500 transition-all text-xl  duration-500 border border-gray-200 rounded-md cursor-pointer group ease bg-gradient-to-b from-white to-gray-50 hover:from-gray-50 hover:to-white active:to-white">
+          <span class="w-full h-0.5 absolute bottom-0 group-active:bg-transparent left-0 bg-gray-100"></span>
+          <span class="h-full w-0.5 absolute bottom-0 group-active:bg-transparent right-0 bg-gray-100"></span>
+          <img src="assets/coin.png" alt="">
+          <span class="noakhaliInitial">0</span> BDT
+      </button>
+      <p id="firstDonationName" class=" text-2xl font-bold text-black mt-7">Donate For Flood at Noakhali , Bangladesh</p>
+      <p class="mt-4"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+    <input id="doanteInput" class="doanteInput input max-w-xl h-12 bg-white border-black mt-5 w-full" placeholder="write your donation amount" type="text">
+    <button onclick="donateforNoakhali()" class="text-white bg-green-400 text-2xl w-full  font-bold px-5 mt-2 py-2 rounded-xl">Donate Now</button>
+  </div>
+</div>
