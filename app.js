@@ -257,3 +257,7 @@ function history(){
     const donateNowButton = document.getElementById("donateNowButton");
     donateNowButton.classList.remove("bg-green-400");
 }
+
+function blogButton(){
+  hideElementById("doubleButton")
+}
