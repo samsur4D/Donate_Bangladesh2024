@@ -43,12 +43,25 @@ const noakhaliFlood = inputValue[0].value;
             const currentDateTime = new Date().toLocaleString();
 
 
+        //     const historySection = document.getElementById("historySection");
+        //     historySection.insertAdjacentHTML("afterbegin",`<div class="px-20 py-6 mt-3 bg-[#F9F7F3] h-32 w-[1000px]  border border-gray-200 container rounded-xl">
+        //       <p class="text-xl font-bold text-black">${yourDonation} Taka is donated in ${selectedCamping}</p>
+        //        <p class="mt-2 text-sm text-gray-500">Donated on: ${currentDateTime}</p>
+        //       <p class="mt-2 text-md font-semi-bold">Thank you, you have helped us.  This little help of your little humanity bears the identity of the great humanity.</p>
+        // </div>`)
             const historySection = document.getElementById("historySection");
-            historySection.insertAdjacentHTML("afterbegin",`<div class="px-20 py-6 mt-3 bg-[#F9F7F3] h-32 w-[1000px]  border border-gray-200 container rounded-xl">
-              <p class="text-xl font-bold text-black">${yourDonation} Taka is donated in ${selectedCamping}</p>
-               <p class="mt-2 text-sm text-gray-500">Donated on: ${currentDateTime}</p>
-              <p class="mt-2 text-md font-semi-bold">Thank you, you have helped us.  This little help of your little humanity bears the identity of the great humanity.</p>
-        </div>`)
+            historySection.insertAdjacentHTML("afterbegin",`<div class="container mx-auto px-4 sm:px-10 md:px-20 py-6 mt-3 bg-[#F9F7F3] h-auto w-full md:w-[90%] lg:w-[1000px] border border-gray-200 rounded-xl">
+    <p class="text-lg sm:text-xl font-bold text-black text-center md:text-left">
+        ${yourDonation} Taka is donated in ${selectedCamping}
+    </p>
+    <p class="mt-2 text-xs sm:text-sm text-gray-500 text-center md:text-left">
+        Donated on: ${currentDateTime}
+    </p>
+    <p class="mt-2 text-sm sm:text-md font-semibold text-center md:text-left">
+        Thank you, you have helped us. This little help of your little humanity bears the identity of the great humanity.
+    </p>
+</div>
+`)
         inputValue[0].value = "";
             
         } else{
