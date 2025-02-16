@@ -1,9 +1,51 @@
+
+
+// ----------------------------------------------------------------------
+
 const inputValue = document.getElementsByClassName("doanteInput");
                     //    একসাথে ৪ টা ইনপুট ট্যাগ সিলেক্ট করে নিয়েছি 
 
 function donateforNoakhali(){
     // console.log(inputValue);   ৪টা ইনপুট ট্যাগ কে পাওয়া যাবে। 
 const noakhaliFlood = inputValue[0].value;
+
+const reserveButton = document.getElementById("reserveButton");
+const reserveButtonValue = parseInt(reserveButton.innerText);
+console.log(typeof(reserveButtonValue));
+if(reserveButtonValue <= 0){
+    Swal.fire({
+        title: "Sorry , We are unable to accept your donation",
+        width: 600,
+        padding: "3em",
+        color: "#716add",
+        background: "#fff url(/images/trees.png)",
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("/images/nyan-cat.gif")
+          left top
+          no-repeat
+        `
+      });
+      inputValue[0].value = "";
+    return
+}else if(reserveButtonValue - parseInt(noakhaliFlood) < 0){
+    Swal.fire({
+        title: "Please check our reserve & Donate a Valid amount",
+        width: 600,
+        padding: "3em",
+        color: "#716add",
+        background: "#fff url(/images/trees.png)",
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("/images/nyan-cat.gif")
+          left top
+          no-repeat
+        `
+      });
+    inputValue[0].value = "";
+    return
+}
+
 // console.log(noakhaliFlood);   ইনপুট ট্যাগ এর নম্বর পাওয়া যাবে। (string value)
   
         //   validation
@@ -42,13 +84,6 @@ const noakhaliFlood = inputValue[0].value;
             const selectedCamping = yourSelectedCamping.innerText;
             const currentDateTime = new Date().toLocaleString();
 
-
-        //     const historySection = document.getElementById("historySection");
-        //     historySection.insertAdjacentHTML("afterbegin",`<div class="px-20 py-6 mt-3 bg-[#F9F7F3] h-32 w-[1000px]  border border-gray-200 container rounded-xl">
-        //       <p class="text-xl font-bold text-black">${yourDonation} Taka is donated in ${selectedCamping}</p>
-        //        <p class="mt-2 text-sm text-gray-500">Donated on: ${currentDateTime}</p>
-        //       <p class="mt-2 text-md font-semi-bold">Thank you, you have helped us.  This little help of your little humanity bears the identity of the great humanity.</p>
-        // </div>`)
             const historySection = document.getElementById("historySection");
             historySection.insertAdjacentHTML("afterbegin",`<div class="container mx-auto px-4 sm:px-10 md:px-20 py-6 mt-3 bg-[#F9F7F3] h-auto w-full md:w-[90%] lg:w-[1000px] border border-gray-200 rounded-xl">
     <p class="text-lg sm:text-xl font-bold text-black text-center md:text-left">
@@ -79,6 +114,45 @@ const noakhaliFlood = inputValue[0].value;
 function donateforFeni(){
 
 const feniFlood = inputValue[1].value;
+// -----------------
+const reserveButton = document.getElementById("reserveButton");
+const reserveButtonValue = parseInt(reserveButton.innerText);
+console.log(typeof(reserveButtonValue));
+if(reserveButtonValue <= 0){
+    Swal.fire({
+        title: "Sorry , We are unable to accept your donation",
+        width: 600,
+        padding: "3em",
+        color: "#716add",
+        background: "#fff url(/images/trees.png)",
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("/images/nyan-cat.gif")
+          left top
+          no-repeat
+        `
+      });
+      inputValue[1].value = "";
+    return
+}else if(reserveButtonValue - parseInt(feniFlood) < 0){
+    Swal.fire({
+        title: "Please check our reserve & Donate a Valid amount",
+        width: 600,
+        padding: "3em",
+        color: "#716add",
+        background: "#fff url(/images/trees.png)",
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("/images/nyan-cat.gif")
+          left top
+          no-repeat
+        `
+      });
+    inputValue[1].value = "";
+    return
+}
+
+// -----------------
 console.log(feniFlood);
 const number = parseInt(feniFlood);
 if(number > 0){
@@ -131,6 +205,42 @@ if(number > 0){
 // Quota Movement
 function donateforQuotaMovement(){
 const quotaMovement = inputValue[2].value;
+const reserveButton = document.getElementById("reserveButton");
+const reserveButtonValue = parseInt(reserveButton.innerText);
+console.log(typeof(reserveButtonValue));
+if(reserveButtonValue <= 0){
+    Swal.fire({
+        title: "Sorry , We are unable to accept your donation",
+        width: 600,
+        padding: "3em",
+        color: "#716add",
+        background: "#fff url(/images/trees.png)",
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("/images/nyan-cat.gif")
+          left top
+          no-repeat
+        `
+      });
+      inputValue[2].value = "";
+    return
+}else if(reserveButtonValue - parseInt(quotaMovement) < 0){
+    Swal.fire({
+        title: "Please check our reserve & Donate a Valid amount",
+        width: 600,
+        padding: "3em",
+        color: "#716add",
+        background: "#fff url(/images/trees.png)",
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("/images/nyan-cat.gif")
+          left top
+          no-repeat
+        `
+      });
+    inputValue[2].value = "";
+    return
+}
 // console.log(quotaMovement);
 const number = parseInt(quotaMovement);
 if(number > 0){
@@ -187,6 +297,43 @@ if(number > 0){
 // Gaza situation
 function donateforGaza(){
 const gazaSituation = inputValue[3].value;    // select the 3 no. index value (string value)
+const reserveButton = document.getElementById("reserveButton");
+const reserveButtonValue = parseInt(reserveButton.innerText);
+console.log(typeof(reserveButtonValue));
+if(reserveButtonValue <= 0){
+    Swal.fire({
+        title: "Sorry , We are unable to accept your donation",
+        width: 600,
+        padding: "3em",
+        color: "#716add",
+        background: "#fff url(/images/trees.png)",
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("/images/nyan-cat.gif")
+          left top
+          no-repeat
+        `
+      });
+      inputValue[3].value = "";
+    return
+}else if(reserveButtonValue - parseInt(gazaSituation) < 0){
+    Swal.fire({
+        title: "Please check our reserve & Donate a Valid amount",
+        width: 600,
+        padding: "3em",
+        color: "#716add",
+        background: "#fff url(/images/trees.png)",
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("/images/nyan-cat.gif")
+          left top
+          no-repeat
+        `
+      });
+    inputValue[3].value = "";
+    return
+}
+
 
 // validation
 const number = parseInt(gazaSituation);
@@ -234,6 +381,10 @@ if(number > 0){
        inputValue[3].value = ""
 }
 }
+
+
+
+
 
 
 
