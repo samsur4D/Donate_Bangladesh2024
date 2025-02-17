@@ -10,15 +10,6 @@
     margin: auto;
 }
 
-/* .background-photo{
-    background-image: url(assets/six.jpg);
-    background-position: center;
-    align-items: center;
-    justify-content: center;
-    object-fit: cover;
-    height: 200px;
-   
-} */
 
 .customClass{
     backdrop-filter: blur(20px);
@@ -27,4 +18,61 @@
 }
 
 
+.photoi{
+    background-image: url(https://i.ibb.co.com/JRNfqHck/five.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .photo2{
+    background-image: url(https://i.ibb.co.com/7Nkg09Nh/gaza12.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .photo3{
+    background-image: url(https://i.ibb.co.com/JFbWTg32/quota12-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .photo4{
+    background-image: url(https://i.ibb.co.com/Qjv0tH1K/six.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .photo5{
+    background-image: url(https://i.ibb.co.com/SwmGpYHq/three.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .photo6{
+    background-image: url(https://i.ibb.co.com/spQjFpdh/two.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
+
+
+
+  
+  
+  
+ 
+
+
+  .photoiInner{
+    visibility: hidden;
+  }
+
+  .photoi:hover .photoiInner {
+    visibility: visible;
+  }
+
+  .bannerbg{
+    background: rgb(50,16,16);
+  background: linear-gradient(90deg, rgba(50,16,16,1) 0%, rgba(198,141,120,1) 100%);
+  }

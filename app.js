@@ -1,7 +1,3 @@
-
-
-// ----------------------------------------------------------------------
-
 const inputValue = document.getElementsByClassName("doanteInput");
                     //    একসাথে ৪ টা ইনপুট ট্যাগ সিলেক্ট করে নিয়েছি 
 
@@ -11,37 +7,33 @@ const noakhaliFlood = inputValue[0].value;
 
 const reserveButton = document.getElementById("reserveButton");
 const reserveButtonValue = parseInt(reserveButton.innerText);
-console.log(typeof(reserveButtonValue));
+// console.log(typeof(reserveButtonValue));
 if(reserveButtonValue <= 0){
     Swal.fire({
-        title: "Sorry , We are unable to accept your donation",
-        width: 600,
-        padding: "3em",
-        color: "#716add",
-        background: "#fff url(/images/trees.png)",
-        backdrop: `
-          rgba(0,0,123,0.4)
-          url("/images/nyan-cat.gif")
-          left top
-          no-repeat
-        `
-      });
+      title: "Sorry, We are unable to accept your donation",
+      width: 600,
+      padding: "3em",
+      color: "#333", // Dark gray for better readability
+      background: "rgba(255, 255, 255, 0.8)", // Semi-transparent white
+      backdrop: `
+        rgba(0, 0, 0, 0.3) 
+        blur(10px)
+      `
+    });
       inputValue[0].value = "";
     return
 }else if(reserveButtonValue - parseInt(noakhaliFlood) < 0){
     Swal.fire({
-        title: "Please check our reserve & Donate a Valid amount",
-        width: 600,
-        padding: "3em",
-        color: "#716add",
-        background: "#fff url(/images/trees.png)",
-        backdrop: `
-          rgba(0,0,123,0.4)
-          url("/images/nyan-cat.gif")
-          left top
-          no-repeat
-        `
-      });
+      title: "Please check our reserve & Donate a Valid amount",
+      width: 600,
+      padding: "3em",
+      color: "#333", // Dark gray for better readability
+      background: "rgba(255, 255, 255, 0.8)", // Semi-transparent white
+      backdrop: `
+        rgba(0, 0, 0, 0.3) 
+        blur(10px)
+      `
+    });
     inputValue[0].value = "";
     return
 }
@@ -119,35 +111,31 @@ const reserveButton = document.getElementById("reserveButton");
 const reserveButtonValue = parseInt(reserveButton.innerText);
 console.log(typeof(reserveButtonValue));
 if(reserveButtonValue <= 0){
-    Swal.fire({
-        title: "Sorry , We are unable to accept your donation",
-        width: 600,
-        padding: "3em",
-        color: "#716add",
-        background: "#fff url(/images/trees.png)",
-        backdrop: `
-          rgba(0,0,123,0.4)
-          url("/images/nyan-cat.gif")
-          left top
-          no-repeat
-        `
-      });
+  Swal.fire({
+    title: "Sorry, We are unable to accept your donation",
+    width: 600,
+    padding: "3em",
+    color: "#333", // Dark gray for better readability
+    background: "rgba(255, 255, 255, 0.8)", // Semi-transparent white
+    backdrop: `
+      rgba(0, 0, 0, 0.3) 
+      blur(10px)
+    `
+  });
       inputValue[1].value = "";
     return
 }else if(reserveButtonValue - parseInt(feniFlood) < 0){
-    Swal.fire({
-        title: "Please check our reserve & Donate a Valid amount",
-        width: 600,
-        padding: "3em",
-        color: "#716add",
-        background: "#fff url(/images/trees.png)",
-        backdrop: `
-          rgba(0,0,123,0.4)
-          url("/images/nyan-cat.gif")
-          left top
-          no-repeat
-        `
-      });
+  Swal.fire({
+    title: "Please check our reserve & Donate a Valid amount",
+    width: 600,
+    padding: "3em",
+    color: "#333", // Dark gray for better readability
+    background: "rgba(255, 255, 255, 0.8)", // Semi-transparent white
+    backdrop: `
+      rgba(0, 0, 0, 0.3) 
+      blur(10px)
+    `
+  });
     inputValue[1].value = "";
     return
 }
@@ -301,35 +289,31 @@ const reserveButton = document.getElementById("reserveButton");
 const reserveButtonValue = parseInt(reserveButton.innerText);
 console.log(typeof(reserveButtonValue));
 if(reserveButtonValue <= 0){
-    Swal.fire({
-        title: "Sorry , We are unable to accept your donation",
-        width: 600,
-        padding: "3em",
-        color: "#716add",
-        background: "#fff url(/images/trees.png)",
-        backdrop: `
-          rgba(0,0,123,0.4)
-          url("/images/nyan-cat.gif")
-          left top
-          no-repeat
-        `
-      });
+  Swal.fire({
+    title: "Sorry, We are unable to accept your donation",
+    width: 600,
+    padding: "3em",
+    color: "#333", // Dark gray for better readability
+    background: "rgba(255, 255, 255, 0.8)", // Semi-transparent white
+    backdrop: `
+      rgba(0, 0, 0, 0.3) 
+      blur(10px)
+    `
+  });
       inputValue[3].value = "";
     return
 }else if(reserveButtonValue - parseInt(gazaSituation) < 0){
-    Swal.fire({
-        title: "Please check our reserve & Donate a Valid amount",
-        width: 600,
-        padding: "3em",
-        color: "#716add",
-        background: "#fff url(/images/trees.png)",
-        backdrop: `
-          rgba(0,0,123,0.4)
-          url("/images/nyan-cat.gif")
-          left top
-          no-repeat
-        `
-      });
+  Swal.fire({
+    title: "Please check our reserve & Donate a Valid amount",
+    width: 600,
+    padding: "3em",
+    color: "#333", // Dark gray for better readability
+    background: "rgba(255, 255, 255, 0.8)", // Semi-transparent white
+    backdrop: `
+      rgba(0, 0, 0, 0.3) 
+      blur(10px)
+    `
+  });
     inputValue[3].value = "";
     return
 }
