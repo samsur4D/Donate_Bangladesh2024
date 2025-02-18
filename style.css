@@ -24,31 +24,31 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .photo2{
+  .photoii{
     background-image: url(https://i.ibb.co.com/7Nkg09Nh/gaza12.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .photo3{
+  .photoiii{
     background-image: url(https://i.ibb.co.com/JFbWTg32/quota12-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .photo4{
+  .photoiv{
     background-image: url(https://i.ibb.co.com/Qjv0tH1K/six.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .photo5{
+  .photov{
     background-image: url(https://i.ibb.co.com/SwmGpYHq/three.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .photo6{
+  .photovi{
     background-image: url(https://i.ibb.co.com/spQjFpdh/two.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -67,12 +67,44 @@
   .photoiInner{
     visibility: hidden;
   }
+  .photoiiInner{
+    visibility: hidden;
+  }
+  .photoiiiInner{
+    visibility: hidden;
+  }
+  .photoivInner{
+    visibility: hidden;
+  }
+  .photovInner{
+    visibility: hidden;
+  }
+  .photoviInner{
+    visibility: hidden;
+  }
 
   .photoi:hover .photoiInner {
     visibility: visible;
   }
+  .photoii:hover .photoiiInner {
+    visibility: visible;
+  }
+  .photoiii:hover .photoiiiInner {
+    visibility: visible;
+  }
+  .photoiv:hover .photoivInner {
+    visibility: visible;
+  }
+  .photov:hover .photovInner {
+    visibility: visible;
+  }
+  .photovi:hover .photoviInner {
+    visibility: visible;
+  }
 
   .bannerbg{
-    background: rgb(50,16,16);
-  background: linear-gradient(90deg, rgba(50,16,16,1) 0%, rgba(198,141,120,1) 100%);
+    background: rgb(20, 50, 20);
+    background: linear-gradient(90deg, rgba(20, 50, 20, 1) 0%, rgba(100, 200, 100, 1) 100%);
   }
+
+  
