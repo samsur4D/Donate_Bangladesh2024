@@ -66,7 +66,7 @@ if(reserveButtonValue <= 0){
             const newToatl = parseInt(totalAmount.innerText);
             // console.log(newToatl);
             // 
-            
+            // history
             const noakhaliCardName = document.getElementById('firstDonationName');
             const noakhali = noakhaliCardName.innerText;
             console.log(noakhali);
